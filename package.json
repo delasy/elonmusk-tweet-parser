@@ -1,0 +1,30 @@
+{
+  "name": "project2",
+  "version": "1.1.1",
+  "description": "Project 2",
+  "author": "Aaron Delasy",
+  "private": true,
+  "repository": "github:delasy/project2",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^7.0.0-alpha.2"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.3.0",
+    "standard": "^16.0.4"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "dev-worker": "nodemon worker.js",
+    "prepare": "husky install",
+    "start-worker": "node worker.js",
+    "test": "standard"
+  }
+}
